@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import data from './data.json';
+import data from './data.json'; /*** Imported Json file Provided***/
 
 
 class App extends Component {
@@ -13,6 +13,7 @@ class App extends Component {
 		};
 	}
   
+/*** Click Method to expand the Price values and display all the prices **/
 	handleClick(message) {
     const { opened } = this.state;
 
@@ -30,7 +31,7 @@ class App extends Component {
 	}
   
 
-
+/*** this method contains code to display reservation details in table format and map all the values from data.json file ***/
   render() {
     const reservationData = data;
     const { opened } = this.state;
